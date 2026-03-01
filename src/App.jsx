@@ -4,6 +4,7 @@ import Todo  from "./components/Todo"
 import Search from "./components/Search.jsx";
 import TodoForm from "./components/TodoForm";
 import Filter from "./components/FIlter.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [todos, setTodos] = useState([
@@ -38,8 +39,7 @@ function App() {
       text,
       category,
       isCompleted: false,
-      },
-    ];
+      }];
     setTodos(newTodos);
   };
 
@@ -60,8 +60,9 @@ function App() {
   }
 
   return (
+    <div>
     <div className="app">
-      <h1>Titulo</h1>
+      <h1>Lista de tarefas</h1>
       <Search search={search} setSearch={setSearch}/>
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
@@ -75,6 +76,8 @@ function App() {
         ))}
       </div>
       <TodoForm addTodo={addTodo} />
+    </div>
+      <Footer/>
     </div>
   );
 }

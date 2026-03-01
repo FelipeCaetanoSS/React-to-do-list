@@ -6,7 +6,13 @@ function TodoForm({addTodo}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!value || !category) return;
+        console.log("teste");
+        if(value == "" || category == ""){
+            //alert("Preencha os campos");
+            console.log("teste 2");
+            return;
+        } 
+        console.log("teste 3");
         addTodo(value, category);
         setValue("");
         setCategory("");
@@ -16,11 +22,11 @@ function TodoForm({addTodo}) {
         <h2>Criar Tarefa</h2>
         <form  onSubmit={handleSubmit}>
             <input type="text" 
-            placeholder="Digite o Título" 
+            placeholder="Digite o título para a tarefa" 
             value={value}
             onChange={(e)=>setValue(e.target.value)}>
             </input>
-                
+
             <select value={category} onChange={(e)=>setCategory(e.target.value)}>
                 <option value="Trabalho">Trabalho</option>
                 <option value="Estudos">Estudos</option>
