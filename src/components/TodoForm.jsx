@@ -8,11 +8,9 @@ function TodoForm({addTodo}) {
         e.preventDefault();
         console.log("teste");
         if(value == "" || category == ""){
-            //alert("Preencha os campos");
-            console.log("teste 2");
+            alert("Preencha os campos");
             return;
         } 
-        console.log("teste 3");
         addTodo(value, category);
         setValue("");
         setCategory("");
@@ -28,6 +26,7 @@ function TodoForm({addTodo}) {
             </input>
 
             <select value={category} onChange={(e)=>setCategory(e.target.value)}>
+                <option value="" disabled>Selecione uma categoria</option>
                 <option value="Trabalho">Trabalho</option>
                 <option value="Estudos">Estudos</option>
                 <option value="Pessoal">Pessoal</option>
