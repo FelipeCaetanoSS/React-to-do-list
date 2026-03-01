@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  padding: 30px;
+  background-color: white;
+  background-image: url('./img/stunning-view-colorful-patterned-neon-lights-darkness.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.app{
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 20px 30px;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 10px 0;
+}
+
+input{
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #333;
+  color: #efefef;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: .3s;
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.todo{
+  background-color: white;
+  box-shadow: 0 0 10px #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.complete{
+  background-color: blue;
+}
+
+.remove{
+  background-color: red;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+.todo-form{
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: solid 1px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.filter,
+.search{
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-optins{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-optins div{
+  flex: 1 1 0;
+}
