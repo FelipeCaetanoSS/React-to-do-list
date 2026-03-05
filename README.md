@@ -1,18 +1,58 @@
-# React + Vite
+# React To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação moderna de gestão de tarefas desenvolvida com **React 19** e **Vite**, focada em performance, organização e boas práticas de desenvolvimento. 
 
-Currently, two official plugins are available:
+---
+## Contexto de Desenvolvimento
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido como parte de uma familiarização prática com React, com o objetivo de consolidar conceitos fundamentais como:
 
-## React Compiler
+- Uso de JavaScript Moderno **(ES6+)**
+- Componentização
+- Props
+- Estado (useState)
+- Renderização condicional
+- Manipulação de listas
+- Filtros e ordenação
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+O desenvolvimento foi baseado no curso do **Matheus Battisti**, servindo como base de aprendizado e posteriormente adaptado com melhorias e organização própria.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Sobre o Projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto consiste em uma aplicação robusta de controle de tarefas que permite:
+
+- Criar tarefas
+- Listar tarefas
+- Pesquisar tarefas em tempo real
+- Filtrar por status (Todas, Completas, Incompletas)
+- Ordenar alfabeticamente (Asc / Desc)
+- Categorizar tarefas (Trabalho, Pessoal, Estudos)
+
+
+O gerenciamento de estado é mantido na raiz da aplicação, garantindo previsibilidade e organização.
+
+---
+
+## Performance
+
+O projeto utiliza:
+
+- **React 19**
+- **Vite**
+-  **JavaScript**
+
+---
+
+## Padrões de Qualidade
+
+A base de código mantém alto padrão de qualidade com:
+
+- ESLint
+- Prettier
+- Husky
+- lint-staged
+
+Com validação automática antes dos commits (pre-commit hooks), garantindo integridade e padronização do código no repositório.
+
